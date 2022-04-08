@@ -6,6 +6,7 @@
 
 body {
     background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 section {
@@ -16,7 +17,12 @@ section {
 }
 
 img {
-    width: 20em;
+    width: 100%;;
     display: flex;
-    margin: 1em auto;
+    margin: 2em auto;
+    border: 1px solid #000;
+}
+
+p {
+    margin-top: 1em;
 }
