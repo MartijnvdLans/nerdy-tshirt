@@ -1,0 +1,29 @@
+{
+  "name": "nerdy-tshirt",
+  "version": "1.0.0",
+  "description": "Nerdy t-shirt",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartijnvdLans/nerdy-tshirt.git"
+  },
+  "author": "Martijn van der Lans",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MartijnvdLans/nerdy-tshirt/issues"
+  },
+  "homepage": "https://github.com/MartijnvdLans/nerdy-tshirt#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "fs": "^0.0.1-security",
+    "node": "^17.7.2",
+    "nodemon": "^2.0.15",
+    "path": "^0.12.7",
+    "uuid": "^8.3.2"
+  }
+}

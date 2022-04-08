@@ -1,0 +1,22 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+section {
+    background: #fff;
+    margin: 1em auto;
+    max-width: 50em;
+    padding: 1em;
+}
+
+img {
+    width: 20em;
+    display: flex;
+    margin: 1em auto;
+}

@@ -1,0 +1,122 @@
+*, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222;
+}
+
+section:nth-of-type(1) {
+    background: #222;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-height: 25em;
+}
+
+svg {
+    max-width: 20em;
+    margin: 0 auto;
+}
+
+section:nth-of-type(1) img {
+    width: 100%;
+    /* filter: sepia(100) hue-rotate(180deg) saturate(3) invert(100); */
+}
+
+section:nth-of-type(1) h2 {
+    margin: 0 auto;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -250%);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+/* ---- */
+/* FORM */
+/* ---- */
+
+form {
+    /* max-width: 500px; */
+    margin: 0 auto;
+    padding: 1em;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+label {
+    margin-top: 1em;
+}
+
+select, input {
+    background-color: #eee;
+    padding: .5em;
+    margin-top: .2em;
+    border: 1px solid #000;
+}
+
+button {
+    margin: 0 auto;
+    margin-top: 1em;
+    padding: 1em;
+    max-width: 10em;
+    border: 0;
+    outline: 0;
+    background-color: #fff;
+    border: 2px solid #00af00;
+    color: #00af00;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00af00;
+    color: #fff;
+    border: 2px solid #00af00;
+}
+
+svg {
+    filter: drop-shadow(0px 0px 5px #000);
+}
+
+@media only screen and (min-width: 720px) {
+    body {
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    section:nth-child(1) {
+        background: radial-gradient(#fff, #000);
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    svg {
+        max-width: 50em;
+        margin: 0 auto;
+    }
+
+    #index form {
+        position: unset;
+        background-color: #000;
+        width: 100%;
+        max-width: 20em;
+    }
+  }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy T-Shirt</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <section>
+    <h3>Total items: <%= amount %></h3>
+    <form action="/emptyShoppingBag" method="post">
+        <button type="submit">X</button>
+    </form>
+    </section>
+    <% data.data.forEach(key => { %>
+        <article>
+              <div>
+              <h3><%= key.gender %> <%= key.color %></h3>
+                <div>
+                  <p><strong>size:</strong> <%= key.size %></p>
+                  <p><strong>text:</strong> <%= key.text %></p>
+                </div>
+              </div>
+            <a href="/?edit=<%= key.id %>">Edit</a>
+        </article>
+    <% }) %>
+    <% if (amount === 0) { %>
+      <h2>your cart is empty</h2>
+    <% } %>
+    <a href="/" class="newShirt">Make a new T-shirt</a>
+    <% if (amount > 0) { %>
+    <a href="/purchase" class="payButton">Purchase T-shirt(s)</a>
+    <% } %>
+</body>
+</html>
